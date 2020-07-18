@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    
+    <header class="titulo">
+        Blackjack
+    </header>
+
+    <div class="row mt-2">
+        <div class="col text-center">
+
+            <button id="btnNuevo"  class="btn btn-danger">Nuevo</button>
+            <button id="btnPedir"  disabled="true" class="btn btn-primary">Carta</button>
+            <button id="btnDetener" disabled="true" class="btn btn-primary">Detener</button>
+        </div>
+    </div>
+
+    <div class="row container">
+        <div class="col">
+
+            <h2>Jugador 1 - <small>0</small></h2>
+            <div id="jugador-cartas" class="divCartas">
+                <!-- <img class="carta" src="assets/cartas/2C.png">
+                <img class="carta" src="assets/cartas/2C.png"> -->
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row container mt-2">
+        <div class="col">
+
+            <h2>Computadora - <small>0</small></h2>
+            <div id="computadora-cartas" class="divCartas">
+                <!-- <img class="carta" src="assets/cartas/2C.png">
+                <img class="carta" src="assets/cartas/2C.png"> -->
+            </div>
+
+        </div>
+    </div>
+
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/juego.js"></script>
+
+    <script>
+
+        console.log( miModulo );
+
+        miModulo.nuevoJuego();
+        
+
+    </script>
+
+</body>
+</html>
